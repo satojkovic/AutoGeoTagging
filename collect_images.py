@@ -22,8 +22,8 @@ def get_images_from_bing(query):
                                      {'src2': re.compile('mm.bing.net')})]
     for img in images:
         raw_img = urllib2.urlopen(img).read()
-        cntr = len([i for i in os.listdir('train_images') if query in i]) + 1
-        with open('train_images/' + query + '_' + str(cntr) + '.jpg',
+        cntr = len([i for i in os.listdir('images') if query in i]) + 1
+        with open('images/' + query + '_' + str(cntr) + '.jpg',
                   'w') as f:
             f.write(raw_img)
 
