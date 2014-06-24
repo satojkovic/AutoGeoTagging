@@ -1,3 +1,3 @@
-Clusteringram
+Pinstagram
 ======================
 Under construction
